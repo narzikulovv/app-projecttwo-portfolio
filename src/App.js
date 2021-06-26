@@ -1,3 +1,5 @@
+import "./sass/sardor.scss"
+import "./sass/baxtiyor.scss"
 
 function App() {
   return (
