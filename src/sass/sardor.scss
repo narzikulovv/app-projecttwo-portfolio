@@ -7,11 +7,23 @@ h1, h2, h3, h4, h5, h6, p, ul{
 body{
   .gradiend{
     background: #F6F6F6;
+
+    ////////////////// Popular component ///////////////////
     .popular_con{
       .popular_row{
         padding-top: 100px;
         .popular_col12{
-
+          h1{
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #000000;
+          }
         }
         .popular_col_slic{
           margin-top: 40px;
@@ -124,6 +136,91 @@ body{
           ////////// rasm ichidagi yozuv ////////
 
 
+        }
+      }
+    }
+
+
+    ////////////////// New component //////////////////////
+
+    .new_container{
+      .new_row{
+        padding-top: 100px;
+        .new_col12{
+          .new_col_conteiner{
+            h1{
+              font-family: SF Pro Display;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 40px;
+              line-height: 48px;
+              display: flex;
+              align-items: center;
+              text-transform: uppercase;
+              color: #000000;
+            }
+          }
+        }
+        .new_slic_col12{
+          margin-top: 20px;
+          .new_slic_card{
+            border: none;
+            .card-body{
+              padding: 0;
+            }
+            .card-footer{
+              background: white;
+              border: none;
+              .left1{
+                h6{
+                  font-family: SF Pro Display;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 16px;
+                  line-height: 21px;
+                  display: flex;
+                  align-items: center;
+                  color: #000000;
+                }
+                h2{
+                  font-family: SF Pro Display;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 24px;
+                  line-height: 29px;
+                  display: flex;
+                  align-items: center;
+                  margin-top: 10px;
+
+                  color: #000000;
+                }
+              }
+              .right1{
+                margin-left: 20px;
+                button{
+                  width: 46px;
+                  height: 46px;
+                  background: #F6F6F6;
+                  border-radius: 50%;
+                  border: none;
+                  display: flex;
+                  justify-content: center;
+                  img{
+                    margin-top: 10px;
+                  }
+                  &:hover{
+                    background: black;
+                    .rasm_qulf1{
+                      display: none;
+                    }
+                    .rasm_qulf2{
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

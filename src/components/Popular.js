@@ -7,7 +7,11 @@ const Popular = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 4
+    };
+
+    const calculation = () => {
+
     };
 
     return (
@@ -27,7 +31,7 @@ const Popular = () => {
                                     <div className="write">
                                         <h1>Clyde Core Foil</h1>
                                         <h2>Women's Sneakers</h2>
-                                        <button type="button" className="btn btn-light">SHOP</button>
+                                        <button type="button" className="btn btn-light" onClick={calculation}>SHOP</button>
                                     </div>
                                 </div>
                             </div>
