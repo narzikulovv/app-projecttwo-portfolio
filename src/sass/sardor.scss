@@ -13,6 +13,118 @@ body{
         .popular_col12{
 
         }
+        .popular_col_slic{
+          margin-top: 40px;
+
+          .slic_col12{
+            .slic_card{
+              overflow: hidden;
+              &:hover{
+                .write{
+                  margin-bottom: 0;
+                }
+              }
+              img{
+                position: relative;
+
+              }
+              .write{
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                margin-bottom: -150px;
+                transition: all .3s linear;
+
+                h1{
+                  font-family: SF Pro Display;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 22px;
+                  line-height: 26px;
+                  display: flex;
+                  align-items: center;
+                  text-transform: capitalize;
+                  color: white;
+                  text-shadow: 0 0 10px black;
+
+                }
+                h2{
+                  font-family: SF Pro Display;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
+                  line-height: 17px;
+                  display: flex;
+                  align-items: center;
+                  text-transform: capitalize;
+                  color: white;
+                  text-shadow: 0 0 10px black;
+
+                }
+                button{
+                  background: black;
+                  border-radius: 1px;
+                  margin-top: 20px;
+                  height: 30px;
+                  font-size: 16px;
+                  padding: 0 30px;
+                  border: 0;
+                  font-family: SF Pro Display;
+                  font-style: normal;
+                  font-weight: normal;
+                  line-height: 19px;
+                  display: flex;
+                  align-items: center;
+                  text-transform: capitalize;
+                  color: #FFFFFF;
+                  &:hover{
+                    background: green;
+                  }
+                }
+              }
+            }
+          }
+
+
+          ///////// surgichlar //////
+
+          .slick-slider{
+            position: relative;
+            .slick-prev{
+              position: absolute;
+              width: 40px!important;
+              height: 40px!important;
+              top: -50px;
+              left: 1000px!important;
+              &:before{
+                border-radius: 0!important;
+                font-size: 40px!important;
+                color: black;
+              }
+
+            }
+            .slick-next{
+              position: absolute;
+              width: 40px!important;
+              height: 40px!important;
+              top: -50px;
+              right: 20px;
+              &:before{
+                border-radius: 0!important;
+                font-size: 40px!important;
+                color: black;
+
+              }
+            }
+            .slick-dots{
+              display: none!important;
+            }
+          }
+
+          ////////// rasm ichidagi yozuv ////////
+
+
+        }
       }
     }
   }
