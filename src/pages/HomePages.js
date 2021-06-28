@@ -3,6 +3,7 @@ import Popular from '../components/Popular';
 import New from '../components/New';
 import Banner from '../components/Banner';
 import {ToastContainer, toast} from "react-toastify";
+
 const HomePages = () => {
     return (
         <div>
@@ -10,8 +11,8 @@ const HomePages = () => {
             <Popular/>
             <New/>
            <ToastContainer/>
-        </div>
-    );
-};
+    </div>
+    )
+}
 
 export default HomePages;

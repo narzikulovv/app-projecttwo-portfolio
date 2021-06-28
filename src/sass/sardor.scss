@@ -29,6 +29,11 @@ body {
               font-size: 30px;
 
             }
+            @media (max-width: 576px) {
+              font-size: 25px;
+
+            }
+
           }
         }
 
@@ -56,6 +61,11 @@ body {
                 left: 30px;
                 margin-bottom: -150px;
                 transition: all .3s linear;
+                
+                @media (max-width: 350px) {
+                  bottom: 15px;
+                  left: 15px;
+                }
 
                 h1 {
                   font-family: SF Pro Display;
@@ -106,12 +116,19 @@ body {
                     background: green;
                   }
                 }
+
+
+
+                //.incrament{
+                //  display: none!important;
+                //}
+
                 .incrament{
-                  display: none!important;
-                }
-                .d-block{
-                  display: block!important;
+                  //display: block!important;
                   display: flex!important;
+                  
+
+
 
                   .qq{
                     border-radius: 5px;
@@ -126,8 +143,25 @@ body {
                       background-color: cadetblue;
                     }
                   }
+                  @media (max-width: 420px) {
+                    align-items: center;
+                    .qq{
+                      width: 25px!important;
+                      height: 25px!important;
+                    }
+                    .ww{
+                      font-size: 15px!important;
+                      height: 25px!important;
+                      width: 40px!important;
+                    }
+                    h3{
+                      font-size: 15px!important;
+                    }
+                  }
                 }
-
+                .d-none{
+                  display: none;
+                }
               }
             }
           }
@@ -156,8 +190,11 @@ body {
                 top: -57px!important;
               }
               @media (max-width: 576px) {
-                left: 400px!important;
-                top: -57px!important;
+
+                top: 50% !important;
+                left: -10px!important;
+                transform: translateY(-50%);
+                z-index: 999;
               }
 
               &:before {
@@ -177,6 +214,12 @@ body {
 
               @media (max-width: 768px) {
                 top: -57px!important;
+              }
+              @media (max-width: 576px) {
+                top: 50% !important;
+                right: -11px!important;
+                z-index: 999;
+
               }
 
               &:before {
