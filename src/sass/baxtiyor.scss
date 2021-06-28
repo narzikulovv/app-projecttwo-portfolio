@@ -121,3 +121,184 @@ nav{
         }
     }
 }
+// ***************************BANNER*************************//
+.banner{
+    width: 100%;
+    background-image: url("/img/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media(max-width:576px){
+        width: auto;
+        background-image: url("/img/banner.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    h1{
+        padding-top: 163px;
+    }
+    p{
+        margin-top: 10px;
+    }
+    .btn{
+        margin:63px 0px 163px 0px;
+    }
+} 
+// ****************************PROFILE********************//
+.profile{
+    width: 30%;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    z-index: 9999;
+    .card{
+    
+        .card-body{
+            justify-content: start!important;
+            .card-photo{
+                width: 50px;
+                height: 50px;
+                margin: 20px auto;
+                background-color: #F24E1E;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    font-size: 25px;
+                    color: #fff;
+                }
+            }
+            .profile-status{
+           
+                .data{
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+// *****************************FORM CONTENT*********************//
+.form-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #620464;
+    .lang{
+        margin-bottom: 15px!important;
+        .dropdown{
+            .dropdown-toggle{
+                background-color: transparent!important;
+                color: #fff!important;
+                border:1px solid #fff;
+            }
+           .dropdown-menu{
+               min-width: 3.7rem!important;
+               background-color: transparent!important;
+               border:1px solid #fff;
+               box-shadow: 0px 0px 8px #999;
+               backdrop-filter: blur(5px);
+              
+               .dropdown-item{
+                   padding: 0!important;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   flex-direction: column;
+                   color: #fff!important;
+                   &:hover{
+                       background-color: transparent!important;
+                   }
+               }
+           }
+       }
+    }
+   .content-register{
+       width: 50%;
+       margin: 0 auto;
+       @media(max-width:992px){
+           width: 70%;
+           margin: 0 auto;
+       }
+       @media(max-width:576px){
+           width: 100%;
+           margin: 0 auto;
+       }
+    .card{
+        background-color: transparent;
+        border: 0;
+        .input-text{
+            margin-bottom: 10px;
+            border-radius: 20px;
+            padding-left: 10px!important;
+            @media(max-width:768px){
+                padding: 8px 4px!important;
+            }
+        }
+        .sign{
+            color: #3DEFCC;
+            background-color: transparent!important;
+            border-radius: 20px;
+            border:1px solid #fff;
+            text-transform: uppercase;
+           
+        }
+    }
+    .register{
+        margin-bottom: 50px;
+        background-color: transparent;
+        text-align: center;
+        color: #3DEFCC;
+        border: 1px solid #fff;
+        padding: 16px 8px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        @media(max-width:768px){
+            padding: 8px 4px!important;
+            margin-bottom: 30px!important;
+        }
+    }
+    h1{
+      color:#3DEFCC;
+      margin-top: 20px;
+      font-size: 40px;
+      @media(max-width:768px){
+          font-size: 24px;
+      }  
+    }
+    p{
+        color: #fff;
+        text-align: center;
+        font-size: 15px;
+        @media(max-width:768px){
+            font-size: 12px;
+            margin-bottom: 10px!important;
+        }  
+    }
+    .copyright{
+        color: #fff;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 12px;
+        @media(max-width:992px){
+            margin-top: 20px;
+        }
+    }
+    .gmail{
+        background-color: transparent;
+        text-align: center;
+        color: #3DEFCC;
+        border: 1px solid #fff;
+        padding: 16px 8px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        @media(max-width:768px){
+            padding: 8px 4px!important;
+        }
+    }
+   }
+  
+}
