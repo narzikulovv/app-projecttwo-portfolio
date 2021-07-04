@@ -3,6 +3,9 @@ import Popular from '../components/Popular';
 import New from '../components/New';
 import Banner from '../components/Banner';
 import {ToastContainer, toast} from "react-toastify";
+import Reklama from '../components/Reklama';
+import Tovar from '../components/Tovar';
+import Shop from '../components/Shop';
 
 const HomePages = () => {
     return (
@@ -10,7 +13,10 @@ const HomePages = () => {
             <Banner />
             <Popular/>
             <New/>
-           <ToastContainer/>
+            <Reklama />
+            <Tovar />
+            <Shop />
+        <ToastContainer/>
     </div>
     )
 }

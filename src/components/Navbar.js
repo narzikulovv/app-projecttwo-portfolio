@@ -3,12 +3,10 @@ import {FaBars, FaTimes} from "react-icons/fa";
 import { useState } from 'react';
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import {Modal, ModalBody, ModalFooter} from 'reactstrap';
 const Navbar = () => {
     
     const [click, setClick] = useState(false);
     const [profile, setProfile] = useState(false);
-    const [open, setOpen] =useState(false)
     const handleClick = () => {
         setClick(!click);
         setProfile(false);
@@ -17,11 +15,8 @@ const Navbar = () => {
  
     const handProfile = () => {
         setProfile(!profile);
-        setClick(false);
-        
+        setClick(false); 
     }
-    const toggle = () =>setOpen(!open)
-    
     const exitHomePage = () => {
         localStorage.setItem("surname", "");
         localStorage.setItem("email", "");
@@ -30,7 +25,6 @@ const Navbar = () => {
         window.location.href = "/login"
 
     };
-    
     return (
         // ********NAVBAR START*******//
         <nav>
@@ -45,7 +39,7 @@ const Navbar = () => {
                                 {click ? <FaTimes/> : <FaBars />}
                               </button>
                               <ul className="navbar  pl-0">
-                                  <li className="nav-item"><Link to="/women" className="nav-link pl-0">Women</Link></li>
+                                  <li className="nav-item"><Link to="/women" className="nav-link ">Women</Link></li>
                                   <li className="nav-item"><Link to="/men" className="nav-link">Men</Link></li>
                                   <li className="nav-item"><Link to="/kids" className="nav-link">Kids</Link></li>
                                   <li className="nav-item"><Link to="/select" className="nav-link">Select</Link></li>
@@ -67,11 +61,11 @@ const Navbar = () => {
                               <li className="social-item"><button className="btn" type="button">
                               <UncontrolledDropdown>
                                     <DropdownToggle caret>
-                                             UZ
+                                             EN
                                     </DropdownToggle>
                                     <DropdownMenu>
                                     <DropdownItem>RU</DropdownItem>
-                                    <DropdownItem>EN</DropdownItem>
+                                    <DropdownItem>UZ</DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>  
                                 </button></li>
@@ -81,14 +75,14 @@ const Navbar = () => {
                                className="btn last-btn"
                                 type="button"
                                 onClick={handProfile}> 
-                                {localStorage.getItem("name").length > 0 ? localStorage.getItem("name").substring(0, 1) : window.location.href = "/login"}
+                                {/* {localStorage.getItem("name").length > 0 ? localStorage.getItem("name").substring(0, 1) : window.location.href = "/login"} */}
+                                <span className="admin"></span>
                               {profile ? <div className="profile">
                                   <div className="card">
                                       <div className="card-header">
                                           <h4 className="text-center user">
                                               User
                                           </h4>
-                                         
                                       </div>
                                       <div className="card-body">
                                       <div className="card-photo">
@@ -103,18 +97,8 @@ const Navbar = () => {
                                      </div>
                                       </div>
                                       <div className="card-footer">
-                                          <button type="button" className="btn btn-danger btn-block" onClick={toggle} >Exit</button>
-                                          <Modal isOpen={open} toggle={() =>toggle(open)}>
-                                        <ModalBody>
-                                            <h4><b>Sahifadan chiqmoqchimisiz?</b></h4> <br/>
-                                            <i>Qayta kirish uchun Registratsiya sahifasidan o'tishingiz kerak bo'ladi</i>
-                                        </ModalBody>
-                                        <ModalFooter>
-                                            <button type="button" className="btn btn-danger" onClick={exitHomePage}>Ha</button>
-                                            <button type="button" className="btn btn-success" onClick={()=> toggle(open)}>Yoq</button>
-                                        </ModalFooter>
-
-                                    </Modal>
+                                          <button type="button" className="btn btn-danger btn-block" onClick={exitHomePage} >Exit</button>
+                                      
                                       </div>
                                   </div>
                               </div>
@@ -145,5 +129,4 @@ const Navbar = () => {
         </nav>
     );
 };
-
 export default Navbar;
