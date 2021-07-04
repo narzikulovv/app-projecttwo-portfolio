@@ -1,6 +1,6 @@
 import "./sass/sardor.scss"
 import "./sass/baxtiyor.scss"
-import Popular from "./components/Popular";
+
 import New from "./components/New";
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "./components/Navbar";

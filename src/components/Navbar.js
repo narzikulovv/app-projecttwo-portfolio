@@ -103,15 +103,15 @@ const Navbar = () => {
                                      </div>
                                       </div>
                                       <div className="card-footer">
-                                          <button type="button" className="btn btn-danger btn-block" onClick={toggle} >Exit</button>
-                                          <Modal isOpen={open} toggle={() =>toggle(open)}>
+                                          <button type="button" className="btn btn-danger btn-block" onClick={()=> toggle({open: true})} >Exit</button>
+                                          <Modal isOpen={open} toggle={() =>toggle({open: false})}>
                                         <ModalBody>
                                             <h4><b>Sahifadan chiqmoqchimisiz?</b></h4> <br/>
                                             <i>Qayta kirish uchun Registratsiya sahifasidan o'tishingiz kerak bo'ladi</i>
                                         </ModalBody>
                                         <ModalFooter>
                                             <button type="button" className="btn btn-danger" onClick={exitHomePage}>Ha</button>
-                                            <button type="button" className="btn btn-success" onClick={()=> toggle(open)}>Yoq</button>
+                                            <button type="button" className="btn btn-success" onClick={()=> toggle({open: false})}>Yoq</button>
                                         </ModalFooter>
 
                                     </Modal>
