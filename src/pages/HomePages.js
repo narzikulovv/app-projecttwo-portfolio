@@ -6,7 +6,7 @@ import {ToastContainer, toast} from "react-toastify";
 import Reklama from '../components/Reklama';
 import Tovar from '../components/Tovar';
 import Shop from '../components/Shop';
-
+import Footer from "../components/Footer";
 const HomePages = () => {
     return (
         <div>
@@ -16,9 +16,9 @@ const HomePages = () => {
             <Reklama />
             <Tovar />
             <Shop />
-        <ToastContainer/>
+            <Footer/>
+            <ToastContainer/>
     </div>
     )
 }
-
 export default HomePages;

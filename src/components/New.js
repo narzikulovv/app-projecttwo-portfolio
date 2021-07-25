@@ -28,7 +28,7 @@ const New = () => {
     };
 
     return (
-        <div className="gradiend">
+        <div  className="gradiend">
             <div className="container new_container">
                 <div className="row new_row">
                     <div className="col-12 new_col12">
